@@ -8,46 +8,70 @@
     <title>Calculator App</title>
   </head>
   <body>
+    <div class="container">
       <header class="left-col">
-          <div class="container">
-              <h1 class="heading-text"><span>Calculator</span>App</h1>
-              <p class="text">Designed and developed by <span class="text text--underlined">Giancarlo Margheritti Colina</span></p>
-              <a href="#" class="link">Send me a message and let's
-                work together 
-                </a>
-              <p class="text">Or</p>
-              <a href="#" class="link">Visit my website and check 
-                my other projects
-                </a>
-              <p class="text">You can also find me in: </p>
-              <a href="#" class="link link-github"><iframe src="#" frameborder="0"></iframe></a>
-            </div>
+        <div class="center">
+          <h1 class="heading-text">
+            <span class="heading-text heading-text--primary">Calculator</span
+            >App
+          </h1>
+          <p class="text">
+            Designed and developed by
+            <span class="text text--underlined"
+              >Giancarlo Margheritti Colina</span
+            >
+          </p>
+          <a href="#" class="link"
+            >Send me a message and let's work together
+          </a>
+          <p class="text">Or</p>
+          <a href="#" class="link"
+            >Visit my website and check my other projects
+          </a>
+          <p class="text">You can also find me in:</p>
+          <a href="#" class="link link-github"
+            ><iframe src="" frameborder="0"></iframe
+          ></a>
+        </div>
       </header>
-      <main>
-          <form action="GET" class="calculator">
-              <div class="calculator__output">
-                  <span class="calculator__previous-operand"></span>
-                  <span class="calculator__current-operand"></span>
-              </div>
-              <input class="calculator__button calculator__button--size-two" type="reset" value="AC">
-              <input class="calculator__button" type="button" value="C">
-              <input class="calculator__button" type="button" value="/">
-              <input class="calculator__button" type="button" value="7">
-              <input class="calculator__button" type="button" value="8">
-              <input class="calculator__button" type="button" value="9">
-              <input class="calculator__button" type="button" value="x">
-              <input class="calculator__button" type="button" value="4">
-              <input class="calculator__button" type="button" value="5">
-              <input class="calculator__button" type="button" value="6">
-              <input class="calculator__button" type="button" value="-">
-              <input class="calculator__button" type="button" value="1">
-              <input class="calculator__button" type="button" value="2">
-              <input class="calculator__button" type="button" value="3">
-              <input class="calculator__button" type="button" value="+">
-              <input class="calculator__button" type="button" value="0">
-              <input class="calculator__button" type="button" value=".">
-              <input class="calculator__button calculator__button--size-two" type="submit" value="=">
-          </form>
+      <main class="main">
+        <form action="GET" class="calculator">
+          <output class="calculator__output">
+            <div class="calculator__container">
+              <span class="calculator__previous-operand">1+1</span>
+              <span class="calculator__current-operand">2</span>
+            </div>
+          </output>
+          <div class="calculator__grid">
+            <input
+              class="calculator__button calculator__button--size-two"
+              type="reset"
+              value="AC"
+            />
+            <input class="calculator__button" type="button" value="C" />
+            <input class="calculator__button" type="button" value="/" />
+            <input class="calculator__button" type="button" value="7" />
+            <input class="calculator__button" type="button" value="8" />
+            <input class="calculator__button" type="button" value="9" />
+            <input class="calculator__button" type="button" value="x" />
+            <input class="calculator__button" type="button" value="4" />
+            <input class="calculator__button" type="button" value="5" />
+            <input class="calculator__button" type="button" value="6" />
+            <input class="calculator__button" type="button" value="-" />
+            <input class="calculator__button" type="button" value="1" />
+            <input class="calculator__button" type="button" value="2" />
+            <input class="calculator__button" type="button" value="3" />
+            <input class="calculator__button" type="button" value="+" />
+            <input class="calculator__button" type="button" value="0" />
+            <input class="calculator__button" type="button" value="." />
+            <input
+              class="calculator__button calculator__button--size-two"
+              type="submit"
+              value="="
+            />
+          </div>
+        </form>
       </main>
+    </div>
   </body>
 </html>

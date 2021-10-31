@@ -19,6 +19,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .left-col,
@@ -28,6 +29,13 @@ body {
 
 .left-col {
   background-color: var(--secondary-color);
+  background-image: url("/images/papyrus-dark.png");
+  background-blend-mode: color-dodge;
+  padding: 2em;
+}
+
+.heading-text {
+    margin-top: 0;
 }
 
 .heading-text,
@@ -39,22 +47,48 @@ body {
   color: var(--primary-color);
 }
 
-.text--underlined {
-  text-decoration: underline;
-}
-
 .link {
   color: var(--secondary-text);
   text-decoration: none;
+  transition: color, font-size 200ms;
+}
+
+.link:hover {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.github-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link--github {
+  height: 32px;
+  margin-left: 1em;
+}
+
+.link--github:hover {
+  font-size: initial;
+}
+
+.github-icon {
+  transition: transform 300ms;
+}
+
+.link--github:hover .github-icon {
+  transform: rotateZ(360deg);
 }
 
 .main {
-  background-image: linear-gradient(to top, #483B9A, var(--primary-color));
+  background-image: linear-gradient(to top, #483b9a, var(--primary-color));
 }
 
 .calculator {
   background-color: var(--text-color);
   border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .calculator__output {
@@ -96,8 +130,24 @@ body {
   font-size: 1rem;
   font-weight: bold;
   padding: 0.6em 0.8em;
+  box-shadow: 0 4px 0px var(--primary-color);
+}
+
+.calculator__button:hover {
+  box-shadow: none;
+  transform: translateY(5px);
 }
 
 .calculator__button--size-two {
   grid-column: span 2;
+}
+
+@media only screen and (max-width: 780px) {
+  .container {
+   display: block;
+  }
+  .left-col {
+      height: initial;
+      padding: 4em;
+  }
 }
